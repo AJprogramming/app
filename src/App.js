@@ -1,18 +1,34 @@
-import logo from "./logo.svg";
 import "./App.css";
+import PersonCard from "./components/PersonCard";
 
 function App() {
   return (
     <div className="center">
       <div>
-        <h1>Hello Dojo!</h1>
-        <h2>Things I need to do:</h2>
-        <ol>
-          <li>Learn React</li>
-          <li>Climb Mt. Everest</li>
-          <li>Run a marathon</li>
-          <li>Feed the dogs</li>
-        </ol>
+        <PersonCard
+          FirstName={"Joe"}
+          LastName={"Doe"}
+          Age={"25"}
+          HairColor={"Black"}
+        ></PersonCard>
+        <PersonCard
+          FirstName={"Carl"}
+          LastName={"Wheezer"}
+          Age={"21"}
+          HairColor={"Red"}
+        ></PersonCard>
+        <PersonCard
+          FirstName={"Jimmy"}
+          LastName={"Neutron"}
+          Age={"30"}
+          HairColor={"Brown"}
+        ></PersonCard>
+        <PersonCard
+          FirstName={"Cindy"}
+          LastName={"Lassnaim"}
+          Age={"28"}
+          HairColor={"Blonde"}
+        ></PersonCard>
       </div>
     </div>
   );
